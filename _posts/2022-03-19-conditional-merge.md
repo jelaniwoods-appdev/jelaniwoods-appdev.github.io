@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Conditional Hash#merge
+tags: ruby hash
 ---
 
 I was in a situation where a key may or may not be present in a Hash (`options`), and I needed to do two different, but very similar things. The general `if`/`else` seemed like too much:

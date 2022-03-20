@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Array#sample accepts an argument
+tags: ruby array
 ---
 
 TIL you can pass an argument to [`Array#sample`](https://apidock.com/rails/Array/sample) to return more than one random element.

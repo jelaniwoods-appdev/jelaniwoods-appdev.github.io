@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Rails Serialize a column
+tags: ruby ruby-on-rails postgresql spotify
 ---
 
 I never used [`serialize`](https://apidock.com/rails/ActiveRecord/Base/serialize/class) before since Postgres supports `:json` and `:jsonb` columns which are better. It's still useful that I can still store Hash data in the sqlite db `text` column— especially if my students, who aren't using Postgres, want to do complicated stuff like OAuth and need to store some credentials.

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: OAuth 2 and RSpotify
+tags: ruby oauth spotify
 ---
 
 I knew that OAuth 2 was replacing OAuth 1, but since I wasn't actively working on projects that used OAuth 1 I didn't really internalize it until I was helping someone use the `rspotify` gem recently and ran into a bunch of issues trying to follow the instructions in the README.

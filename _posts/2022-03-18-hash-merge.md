@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Hash#merge and setting defaults
+tags: ruby hash ruby-on-rails
 ---
 
 When writing a method with an options Hash, how best do you specify default key/value pairs that can be safely overwritten?
