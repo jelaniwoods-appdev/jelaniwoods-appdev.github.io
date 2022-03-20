@@ -149,7 +149,7 @@ class App extends React.Component {
       answer: "Yes" // initial value
     }
   }
-  ...
+  //...
 ```
 
 Can pass state from Parent to Child Component through props.
@@ -569,7 +569,7 @@ render() {
 <input 
   name="firstName" 
   value={props.data.firstName}
-  ...
+  //...
 ```
 
 
