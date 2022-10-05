@@ -4,8 +4,6 @@ title: Adding "breakpoints" to help you debug a Ruby program
 tags: ruby debug
 ---
 
-# Adding "breakpoints" to help you debug a Ruby program
-
 Sometimes when you are debugging a Ruby script, you want to do *more* than just print variables to debug. It'd be nice to pause the program at a particular moment and actually interact with all the variables that have been defined up until that point. Turns out, you can do this by adding breakpoints to your script.
 
 > a breakpoint is an intentional stopping or pausing place in a program, put in place for debugging purposes.
