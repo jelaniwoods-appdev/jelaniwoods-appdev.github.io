@@ -47,3 +47,6 @@ Things like IDE's experience, testing, and debugging are better.
 
 
 tsconfig.json
+
+
+webpack can auto-compile tsconfig and the generated js will be server in the browser, not as an actual file in the project
