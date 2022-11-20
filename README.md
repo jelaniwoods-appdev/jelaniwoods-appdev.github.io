@@ -13,6 +13,8 @@ Run
 bundle exec jekyll serve
 ```
 
+For drafts, add `--drafts`
+
 > jekyll 3.9.0 | Error:  no implicit conversion of Hash into Integer
 
 Happens usually with Ruby 3+. If you downgrade to Ruby 2.7 it should work.

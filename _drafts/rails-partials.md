@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rails Partials
+title: "Ruby on Rails: View Partials"
 tags: rails
 ---
 
