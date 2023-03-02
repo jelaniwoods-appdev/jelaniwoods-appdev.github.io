@@ -15,6 +15,6 @@ did _not_ work.
 I did some digging and found that executing this raw SQL did work:
 
 ```rb
-ActiveRecord::Base.connection.execute("UPDATE SQLITE_SEQUENCE SET SEQ=0 WHERE NAME='table_name';)
+ActiveRecord::Base.connection.execute("UPDATE SQLITE_SEQUENCE SET SEQ=0 WHERE NAME='table_name'")
 ```
 
