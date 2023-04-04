@@ -27,7 +27,7 @@ GIT_COMMITTER_EMAIL=joemama@example.com GIT_COMMITTER_NAME=joemama git commit --
 Pass `GIT_AUTHOR_EMAIL` and `GIT_AUTHOR_NAME` to amend with email and namerespectively.
 
 ```bash
-GIT_COMMITTER_EMAIL=joemama@example.com GIT_COMMITTER_NAME=joemama git commit --amend --no-edit
+GIT_AUTHOR_EMAIL=joemama@example.com GIT_AUTHOR_NAME=joemama git commit --amend --no-edit
 ```
 
 You can always find out the name by running `git show ...` on the commit that they made:
