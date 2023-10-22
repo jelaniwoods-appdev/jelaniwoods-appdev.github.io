@@ -10,6 +10,7 @@ To increase the performace, I wanted to render just one modal and have the conte
 
 This was a little tricky to get timings right for when and what content to load, but this article helped me a lot.
 
-https://philonrails.substack.com/p/loading-dynamic-content-on-opening
+[https://philonrails.substack.com/p/loading-dynamic-content-on-opening](https://philonrails.substack.com/p/loading-dynamic-content-on-opening
+)
 
 Eventually I added an auto-scroll to the exact part of the thread that was related to the notification to.
