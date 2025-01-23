@@ -61,7 +61,7 @@ html {
 body {
   color: light-dark(#515151, #E5E6E5);
   // color: light-dark(#515151, #edede9);
-  background-color: light-dark(#F3F8E7, #1E2229);
+  background-color: light-dark(#E5E6E5, #1E2229);
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
@@ -321,7 +321,7 @@ tbody tr:nth-child(odd) th {
 .masthead-title small {
   font-size: 75%;
   font-weight: 400;
-  color: #c0c0c0;
+  color: light-dark(#7b7b7b, #727281);
   letter-spacing: 0;
 }
 
