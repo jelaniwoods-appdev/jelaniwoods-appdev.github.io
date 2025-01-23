@@ -11,7 +11,9 @@ This command saved my life. I was trying to debug a really silly error that I co
 
 #### Video I watched:
 
-[![Git Bisect](https://markdown-videos-api.jorgenkh.no/url?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DD7JJnLFOn4A)](https://www.youtube.com/watch?v=D7JJnLFOn4A)
+<div class="iframe-container">
+  <iframe border="0" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" src="https://www.youtube.com/embed/D7JJnLFOn4A?si=S6EvfXpZiN1rwuu_"></iframe>
+</div>
 
 #### Notes
 

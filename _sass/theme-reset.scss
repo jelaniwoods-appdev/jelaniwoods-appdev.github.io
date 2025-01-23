@@ -70,7 +70,8 @@ body {
 a {
   // color: light-dark(#268bd2, #4A4E69);
   color: light-dark(#268bd2, #9A8C98);
-  text-decoration: none;
+  // text-decoration: none;
+  text-decoration: underline;
 }
 a strong {
   color: inherit;
