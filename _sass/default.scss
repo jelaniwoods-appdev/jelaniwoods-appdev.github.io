@@ -2,6 +2,11 @@
   color-scheme: light dark;
 }
 
+@font-face {
+  font-family: "Iosevka";
+  src: url("/assets/fonts/Iosevka-Regular.ttf");
+}
+
 .iframe-container {
   position: relative;
   overflow: hidden;
