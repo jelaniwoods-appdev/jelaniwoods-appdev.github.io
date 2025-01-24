@@ -1,5 +1,19 @@
 :root {
-  color-scheme: light dark;
+  // color-scheme: light dark;
+  color-scheme: var(--color-scheme, light);
+    
+  /* page preference is "dark" */
+  &:has(#color-scheme option[value="dark"]:checked) {
+    --color-scheme: dark;
+    /* any additional dark styles */
+  }
+  /* page preference is "system", and system preference is "dark" */
+  @media (prefers-color-scheme: dark) {
+    &:has(#color-scheme option[value="system"]:checked) {
+      --color-scheme: dark;
+      /* any additional dark styles, again */
+    }
+  }
 }
 
 @font-face {

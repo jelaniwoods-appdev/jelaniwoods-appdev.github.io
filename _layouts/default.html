@@ -23,7 +23,7 @@
         <div class="search-container">
           <input type="text" id="search-input" placeholder="Search by title or tag...">
           <ul id="results-container"></ul>
-          </div>
+        </div>
           
           <!-- Script pointing to search-script.js -->
           <script src="/public/js/search-script.js" type="text/javascript"></script>
@@ -41,7 +41,11 @@
     </div>
 
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>
-
+    <select id="color-scheme" style="">
+      <option value="system" selected>System</option>
+      <option value="light">Light</option>
+      <option value="dark">Dark</option>
+    </select>
     <script src='{{ site.baseurl }}/public/js/script.js'></script>
   </body>
 </html>
