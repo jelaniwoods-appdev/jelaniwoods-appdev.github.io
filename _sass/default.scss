@@ -2,15 +2,29 @@
   // color-scheme: light dark;
   color-scheme: var(--color-scheme, light);
     
-  /* page preference is "dark" */
-  &:has(#color-scheme option[value="dark"]:checked) {
+  // /* page preference is "dark" */
+  // &:has(#color-scheme option[value="dark"]:checked) {
+  //   --color-scheme: dark;
+  //   /* any additional dark styles */
+  // }
+
+  &:has(#mode:checked) {
     --color-scheme: dark;
     /* any additional dark styles */
   }
+
+  /* page preference is "system", and system preference is "dark" */
+  // @media (prefers-color-scheme: dark) {
+  //   &:has(#color-scheme option[value="system"]:checked) {
+  //     --color-scheme: dark;
+  //     /* any additional dark styles, again */
+  //   }
+  // }
+
   /* page preference is "system", and system preference is "dark" */
   @media (prefers-color-scheme: dark) {
-    &:has(#color-scheme option[value="system"]:checked) {
-      --color-scheme: dark;
+    &:has(#mode:not(:checked)) {
+      --color-scheme: light;
       /* any additional dark styles, again */
     }
   }
