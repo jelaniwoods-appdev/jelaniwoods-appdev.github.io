@@ -4,6 +4,12 @@ title: Linux Commands I Forget
 tags: linux
 ---
 
+### Append to $PATH and add to .bashrc
+
+```bash
+echo 'export PATH="$PWD/bin:$PATH"' >> ~/.bashrc
+```
+
 ### Extract .tag.gz
 
 ```bash
