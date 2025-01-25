@@ -49,3 +49,15 @@ Get info from `args.inputs`...
     args.state.player_rect.y += MOVE_UNIT
   end
 ```
+
+
+> Generally in a pipeline for a game engine, you have rendering, game simulation (calculation), and input processing.
+
+```rb
+def tick args
+  tick_instructions args, "Sample app shows how to move a square over time and determine collision."
+  defaults args
+  render args
+  calc args
+end
+```
