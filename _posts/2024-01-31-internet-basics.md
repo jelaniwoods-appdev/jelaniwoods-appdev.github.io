@@ -20,7 +20,7 @@ Together, the networks from *everyone's* home makes up the internet. Consider it
 
 ## Terms
 
-- **Packet**: A small unit of data transmitted over the internet.
+- **Packet[^1]**: A small unit of data transmitted over the internet.*
 - **Router**: Device that directs packets between different networks.
 - **IP Address**: Unique ID assigned to each device on a network. It's used to route data to the correct destination.
 - **Domain Name**: Human-readable name used to identify websites in place of an IP Address.
@@ -28,6 +28,9 @@ Together, the networks from *everyone's* home makes up the internet. Consider it
 - **HTTP**: Hypertext Transfer Protocol, used to transfer data between client (browser) and server (web app/computer hosting it).
 - **HTTPS**: An encrypted verison of HTTP. Used to provide secure communication between client and server.
 - **SSL/TLS**: Secure Sockets Layer and Transport Layer Security protocols, used to provide secure communication over the network\*.
+
+
+[^1]: [What do we mean here?](https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works#packets_explained) Basically, when data is sent across the web, it is sent in thousands of small chunks. There are multiple reasons why data is sent in small packets. They are sometimes dropped or corrupted, and it's easier to replace small chunks when this happens. Additionally, the packets can be routed along different paths, making the exchange faster and allowing many different users to download the same website at the same time. If each website was sent as a single big chunk, only one user could download it at a time, which obviously would make the web very inefficient and not much fun to use. 
 
 ## Protocols
 
