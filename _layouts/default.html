@@ -41,11 +41,20 @@
     </div>
 
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>
-    <select id="color-scheme" style="">
-      <option value="system" selected>System</option>
+    <select id="color-scheme" onchange="storeColorSchemePreference();">
+      <option value="system">System</option>
       <option value="light">Light</option>
       <option value="dark">Dark</option>
     </select>
+    <script>
+      var x = localStorage.getItem("preferredColorScheme");
+      var option = document.querySelector(`#color-scheme option[value="${x}"]`);
+      if (option) {
+        option.selected = true;
+      } else {
+        document.querySelector(`#color-scheme option[value="system"]`).selected = true;
+      }
+    </script>
     <script src='{{ site.baseurl }}/public/js/script.js'></script>
   </body>
 </html>
