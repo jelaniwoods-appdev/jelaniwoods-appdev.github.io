@@ -71,7 +71,7 @@ Links by default submit GET requests to the server. You can change that with the
 > You should consider that for accessibility reasons, it’s better to use actual forms and buttons for anything that’s not a GET.
 [— Performing a visit with a different method](https://turbo.hotwired.dev/handbook/drive#performing-visits-with-a-different-method)
 
-**TODO**: I want a source to backup this claim. I know that `GET` requests are supposed to be stateless (don't affect the state of the data source) so maybe that also implies that all anchor elements should perform stateless actions? If so, then does that mean I _shouldn't_ use anchor elements for delete requests? That would mean I need to use a form to make delete requests and I don't think I've seen a form setup to perform a delete request in the wild before (at least, not in a Rails app).
+**TODO**: I want a source to backup this claim. I know that `GET` requests are "safe" and should not modify a resource so maybe that also implies that anchor elements should _never_ modify resources? If so, then does that mean I _shouldn't_ use anchor elements for delete requests? That would mean I need to use a form to make delete requests and I don't think I've seen a form setup to perform a delete request in the wild before (at least, not in a Rails app).
 
 ## Confirmation
 
