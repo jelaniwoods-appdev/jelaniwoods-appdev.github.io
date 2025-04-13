@@ -34,7 +34,7 @@ Things like:
 - rendering the final response
 - updating the scroll position
 
-> The point of merging instead of replacing the <head> elements is that if <title> or <meta> tags change, say, they will be updated as expected, but if links to assets are the same, they won’t be touched and therefore the browser won’t process them again
+> The point of merging instead of replacing the `<head>` elements is that if `<title>` or `<meta>` tags change, say, they will be updated as expected, but if links to assets are the same, they won’t be touched and therefore the browser won’t process them again
 
 ### Application Visits
 
@@ -158,5 +158,5 @@ When the response code is `4xx` or `5xx`, validation error messages are displaye
 
 ### Streaming
 
-> Servers may also respond to form submissions with a Turbo Streams message by sending the header Content-Type: text/vnd.turbo-stream.html followed by one or more <turbo-stream> elements in the response body. This lets you update multiple parts of the page without navigating
+> Servers may also respond to form submissions with a Turbo Streams message by sending the header Content-Type: text/vnd.turbo-stream.html followed by one or more `<turbo-stream>` elements in the response body. This lets you update multiple parts of the page without navigating
 
