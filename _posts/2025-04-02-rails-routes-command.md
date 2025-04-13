@@ -1,6 +1,6 @@
 ---
 layout: post
-title: `rails routes` command flags
+title: rails routes command flags
 tags: rails
 ---
 
