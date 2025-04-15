@@ -71,7 +71,26 @@ Links by default submit GET requests to the server. You can change that with the
 > You should consider that for accessibility reasons, it’s better to use actual forms and buttons for anything that’s not a GET.
 [— Performing a visit with a different method](https://turbo.hotwired.dev/handbook/drive#performing-visits-with-a-different-method)
 
-**TODO**: I want a source to backup this claim. I know that `GET` requests are "safe" and should not modify a resource so maybe that also implies that anchor elements should _never_ modify resources? If so, then does that mean I _shouldn't_ use anchor elements for delete requests? That would mean I need to use a form to make delete requests and I don't think I've seen a form setup to perform a delete request in the wild before (at least, not in a Rails app).
+**TODO**: I want a source to backup this claim. I know that `GET` requests are "safe" and should not modify a resource so maybe that also implies that anchor elements should _never_ modify resources? If so, then does that mean I _shouldn't_ use anchor elements for delete requests? That would mean I need to use a form to make delete requests and I don't think I've seen a form setup to perform a delete request in the wild before.
+**UPDATE**
+Here's one short mention
+- https://railsdesigner.com/link-button-to/
+This mentions that `link_to method: :post` actually creates a hidden form when clicked
+- https://mixandgo.com/learn/ruby-on-rails/link-to 
+This mentions that `link_to data: { turbo_method: :delete }` creates a hidden form as well
+- https://hotwire.io/documentation/turbo/handbook/drive
+The source code for `link_to` always creates an anchor element, so is the "form" something that happens client-side? Did the behavior change? or are the previous two articles wrong?
+- https://apidock.com/rails/ActionView/Helpers/UrlHelper/link_to/
+Aha!
+> When you do a
+> link_to "Delete", @some_obj, :method => "delete", :confirm => "Are you sure?"
+> Rails 3 will generate
+> <a href="some_obj/id" data-confirm="Are you sure?" data-method="delete">Delete</a>
+> rails.js will creates observers that convert that into a form.
+> Be aware that this probably won’t work as a link from inside a form (since forms in forms isn’t valid).
+- https://apidock.com/rails/ActionView/Helpers/UrlHelper/link_to#1077--method-delete-etc-
+so this is probably still true and it happens client-side. I assume the reason why articles still say to use actual forms is because it's more semantic, doesn't rely as heavily on JS, and is better for SEO and accessibility.
+
 
 ## Confirmation
 
@@ -160,3 +179,8 @@ When the response code is `4xx` or `5xx`, validation error messages are displaye
 
 > Servers may also respond to form submissions with a Turbo Streams message by sending the header Content-Type: text/vnd.turbo-stream.html followed by one or more `<turbo-stream>` elements in the response body. This lets you update multiple parts of the page without navigating
 
+
+- https://stackoverflow.com/a/56505707
+- https://usability.yale.edu/web-accessibility/articles/links
+- https://www.a11yproject.com/posts/creating-valid-and-accessible-links/#when-should-you-use-a-button-instead%3F
+- https://adrianroselli.com/2016/01/links-buttons-submits-and-divs-oh-hell.html
